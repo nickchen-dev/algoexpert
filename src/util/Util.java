@@ -69,4 +69,8 @@ public class Util {
     public static long getSysTime() {
         return System.currentTimeMillis();
     }
+
+    public static int generateRandomValue(int range) {
+        return (int) (Math.random() * range + 1) - (int) (Math.random() * range);
+    }
 }
